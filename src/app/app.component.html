@@ -1,0 +1,33 @@
+<!--<mat-toolbar color="primary">-->
+<!--  <mat-toolbar-row>-->
+<!--    <button mat-icon-button>-->
+<!--      <mat-icon (click)="sidenav.toggle()">menu</mat-icon>-->
+<!--    </button>-->
+<!--    <h1>Angular Material</h1>-->
+<!--  </mat-toolbar-row>-->
+<!--</mat-toolbar>-->
+
+<!--<mat-sidenav-container class="example-container">-->
+
+<!--  <mat-sidenav #sidenav opened="true" mode="side" class="container-sidebar">-->
+<!--    <app-sidebar (onToggleSideNav)="onToggleSideNav($event)"></app-sidebar>-->
+<!--  </mat-sidenav>-->
+
+<!--  <mat-sidenav-content>-->
+<!--    <div style="height: 88vh;margin: 20px">-->
+<!--      <app-body [collapsed]="isSideNavCollapsed" [screenWidth]="screenWidth"></app-body>-->
+<!--    </div>-->
+<!--  </mat-sidenav-content>-->
+
+<!--</mat-sidenav-container>-->
+
+
+<div class="container">
+  <div class="header">
+    <app-top></app-top>
+  </div>
+  <div class="content-large">
+    <router-outlet></router-outlet>
+  </div>
+  <div class="footer">Footer</div>
+</div>

@@ -1,0 +1,17 @@
+<div class="body">
+  <div class="index-post">
+    <div class="contener" *ngFor="let item of items">
+      <div class="image-contener">
+        <img [src]="item" alt="">
+      </div>
+      <div class="meta-contener">
+        <h2 class="title">Nature World.</h2>
+        <span class="desc">{{item}}</span>
+      </div>
+      <div class="button-contener">
+        <a routerLink="/play" class="button" (click)="sentValue(item)">Read More →</a>
+      </div>
+    </div>
+  </div>
+</div>
+

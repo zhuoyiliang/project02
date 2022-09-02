@@ -1,0 +1,5 @@
+<div class="heroes-menu" *ngFor="let item of navbar">
+  <a [routerLink]="[item.routeLink]">{{item.label}}</a>
+</div>
+
+<button (click)="testProxy()">(click)</button>
